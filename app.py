@@ -4,12 +4,12 @@ import plotly.graph_objects as go
 
 # Page configuration
 st.set_page_config(
-    page_title="LCOE Space Solar Analysis",
+    page_title="Space Solar LCOE",
     page_icon="☀️",
     layout="wide"
 )
 
-st.title("LCOE Space Solar Cost Model Analysis")
+st.title("Space-based Solar: levelized cost of electricity")
 
 # Sidebar for inputs
 st.sidebar.header("Input Parameters")
@@ -152,7 +152,7 @@ fig.add_trace(go.Scatter(
 ))
 
 fig.update_layout(
-    title='LCOE Heatmap',
+    title='Levelized cost of electricity:',
     xaxis=dict(
         title='Launch Cost ($/kg)',
         type='log'
